@@ -1,0 +1,16 @@
+saludos = []
+
+def saludar(nombre):
+    mensaje = f"Hola, {nombre}!"
+    print(mensaje)
+    saludos.append(nombre)
+
+def mostrar_historial():
+    print("Historial de saludos:")
+    for n in saludos:
+        print(f"- {n}")
+
+if __name__ == "__main__":
+    nombre = input("Ingresa tu nombre: ")
+    saludar(nombre)
+    mostrar_historial()
