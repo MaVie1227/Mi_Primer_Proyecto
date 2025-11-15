@@ -1,5 +1,12 @@
+saludos = []
+print("Introduce nombres (escribe 'fin' para terminar):")
 
-    # ENTREGABLE 2: entrada-proceso-salida
+while True:
+    nombre = input("¿Cuál es tu nombre? ")
+    if nombre.lower() == 'fin':
+        break
+    saludos.append(nombre)
 
-nombre = input("¿Cuál es tu nombre? ")
-print("Hola", nombre, "bienvenido a tu primer proyecto.")
+print("\nSaludos generados:")
+for n in saludos:
+    print(f"Hola, {n}! Bienvenido a tu primer proyecto.")
