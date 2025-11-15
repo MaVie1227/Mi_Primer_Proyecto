@@ -1,5 +1,5 @@
-def saludo(nombre):
-    return f"Hola, {nombre}! Este es mi primer proyecto."
 
-if __name__ == "__main__":
-    print(saludo("Choche"))
+    # ENTREGABLE 2: entrada-proceso-salida
+
+nombre = input("¿Cuál es tu nombre? ")
+print("Hola", nombre, "bienvenido a tu primer proyecto.")
